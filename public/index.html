@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Reporting System</title>
+    <link rel="stylesheet" type="text/css" href="D:\\File\\Programming\\Web development\\electrifyit-reports-dashboard\\frontend\\public\\style.css">
+</head>
+<body>
+    <header>
+        <h1>Vehicle Reporting System</h1>
+    </header>
+    <main>
+        <section class="filters">
+            <h2>Filters</h2>
+        
+            <div class="filter-option">
+                <label for="report-type">Report Type:</label>
+                <select id="report-type">
+                    <option value="total-miles-driven">Total Miles Driven</option>
+              
+                </select>
+            </div>
+            <div class="filter-option">
+                <label for="frequency">Frequency:</label>
+                <select id="frequency">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="filter-option">
+                <label for="time-frame">Time Frame:</label>
+                <input type="date" id="start-date"> 
+                <input type="date" id="end-date"> 
+            </div>
+        </section>
+        <section class="results">
+            <h2>Results</h2>
+            
+            <div id="result-container">
+              
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vehicle Reporting System</p>
+    </footer>
+    <script src="app.js"></script> 
+</body>
+</html>
